@@ -10,7 +10,8 @@
         Width="800"
         Icon="assets/ball.ico">
     <Window.Resources>
-        <Style TargetType="Border">
+        <Style TargetType="Border"
+               x:Key="BordeJugadores">
             <Setter Property="BorderBrush"
                     Value="Black" />
             <Setter Property="BorderThickness"
@@ -45,7 +46,7 @@
         </Style>
     </Window.Resources>
     <StackPanel>
-        <Border>
+        <Border Style="{StaticResource BordeJugadores}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
@@ -67,7 +68,7 @@
             </StackPanel>
         </Border>
 
-        <Border>
+        <Border Style="{StaticResource BordeJugadores}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
